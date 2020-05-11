@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <img src="software.jpg" alt="Software Educativo" class="card-img-top">
+            <div class="card-body">
+                <h2>$350</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quia cum delectus, exercitationem doloribus rerum iusto.
+                </p>
+            </div>
+            <div class="card-footer">
+                <form action="/cashed" method="POST">
+                    <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_CpM7VwM2ekLdRfUa6cYJmcLc0095H2Ls7c"
+                        data-amount="35000"
+                        data-name="Digital Store"
+                        data-description="Herramientas del Software Educativo"
+                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto"
+                        data-currency="mxn">
+                    </script>
+                    <script>
+                        document.getElementsByClassName('stripe-button-el')[0]
+                            .style.display = 'none';
+                    </script>
+                    <button class="btn btn-dark btn-block">
+                        Comprar <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
